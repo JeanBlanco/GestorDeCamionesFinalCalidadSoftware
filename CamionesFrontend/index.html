@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Camiones</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header>
+    <h1><i class="fas fa-truck"></i> Gestor de Camiones</h1>
+</header>
+
+<section>
+    <h2><i class="fas fa-plus-circle"></i> Añadir Camión</h2>
+    <form id="truck-form">
+        <input type="text" id="plate" placeholder="Placa del camión" required>
+        <input type="text" id="driver" placeholder="Conductor" required>
+        <button type="submit">AGREGAR CAMIÓN</button>
+    </form>
+</section>
+
+<br>
+
+<section>
+    <h2><i class="fas fa-list"></i> Lista de Camiones</h2>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Buscar camión por placa" class="search-field">
+    </div>
+    <ul id="truck-list"></ul>
+</section>
+</body>
+</html>

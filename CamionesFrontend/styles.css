@@ -1,0 +1,107 @@
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://www.example.com/camion-fondo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+h1 i {
+    margin-right: 10px;
+}
+
+h2 {
+    text-align: left;
+    color: #333;
+    padding-left: 20px;
+}
+
+#truck-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+    text-transform: uppercase;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-field {
+    padding: 10px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* Estilo para la lista de camiones */
+#truck-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#truck-list li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button.delete, button.onroute {
+    padding: 5px 10px;
+    margin-left: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #dc3545;
+    color: white;
+}
+
+button.delete:hover, button.onroute:hover {
+    background-color: #c82333;
+}
+
+button.active {
+    background-color: #28a745;
+}
